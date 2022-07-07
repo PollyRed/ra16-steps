@@ -4,11 +4,13 @@ function Trainings(props) {
   const {trainings, onTrainingDelete} = props;
 
   return (
-    <div>
+    <div className="labels">
+      <div>
       <label>Дата (ДД.ММ.ГГ)</label>
       <label>Пройдено км</label>
       <label>Действия</label>
-      <ul>
+      </div>
+      <ul className="trainings">
         {trainings.map((training) => {
           return <li key={training.date}>
                     <Training 

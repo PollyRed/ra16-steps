@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.training-list {
   display: flex;
-  flex-direction: column;
+  height: 100px;
+  width: 800px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .labels {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.labeled-input {
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  margin: 10px;
+}
+
+.submit-button {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 37px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(155, 155, 155);
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.training-field {
+  margin-right: 73px;
+  margin-left: 22px;
+}
+
+.trainings {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 420px;
+  min-height: 20px;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+button {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(155, 155, 155);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
 }
